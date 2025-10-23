@@ -1,0 +1,21 @@
+# Create the main directories
+mkdir -p public/images/categories
+mkdir -p public/images/products
+
+# Verify the directories were created
+ls -la public/images/
+
+# Skincare
+curl -o public/images/categories/skincare.jpg "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400&h=300&fit=crop&auto=format"
+
+# Makeup
+curl -o public/images/categories/makeup.jpg "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&h=300&fit=crop&auto=format"
+
+# Hair Care
+curl -o public/images/categories/hair-care.jpg "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400&h=300&fit=crop&auto=format"
+
+# Fragrance
+curl -o public/images/categories/fragrance.jpg "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=300&fit=crop&auto=format"
+
+# Body Care
+curl -o public/images/categories/body-care.jpg "https://images.unsplash.com/photo-1559068617-8aa304ed2ee0?w=400&h=300&fit=crop&auto=format"

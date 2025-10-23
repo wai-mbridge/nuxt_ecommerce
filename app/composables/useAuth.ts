@@ -49,7 +49,6 @@ export const useAuth = () => {
             .select('*')
             .eq('id', user_id)
             .single()
-
         if (error) throw error
         return data
     }
@@ -59,7 +58,6 @@ export const useAuth = () => {
         if (!user.value) throw new Error('No user logged in')
 
         const user_id = user.value.sub
-        console.log('🔄 Starting profile update with data:', updates)
         const { data, error } = await supabase
             .from('profiles')
             .update({
